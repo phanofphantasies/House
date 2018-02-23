@@ -15,8 +15,13 @@ def draw_handler(canvas):
     canvas.draw_polygon([(0,600),(600,600),(600,465),(0,465)],3,"#008080","#008080" )
     canvas.draw_circle([150,525],30,60,"#4d2600")
     canvas.draw_polygon([(0,525),(600,525),(600,465),(0,465)],3,"#008080","#008080" )
-    canvas.draw_line([(150,525),(150,420)],5,"Black")
+    canvas.draw_line((150,530),(150,500),5,"Black")
+    canvas.draw_polygon([(110,500),(165,500),(145,450)], 5,"#800000","#800000")
+    canvas.draw_circle([160,555],17,7,"Black","#ffffb3")
+    canvas.draw_line((160,570),(160,540),3,"Black")
+    canvas.draw_line((140,555),(180,555),3,"Black")
 
+    
 frame = simplegui.create_frame('Testing', 600,600)
 
 frame.set_canvas_background('gainsboro')
